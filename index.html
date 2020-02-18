@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monumentos</title>
+	<script defer src="script.js"></script>
+	<meta charset="utf-8">
+	<style>
+	body
+	{
+		padding: 0;
+		margin: 0;
+		background-image: url(Black-White.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	 	height: 1500px;
+	}
+	nav
+	{
+		height: 50px;
+		width: 100%;
+		background-color: #424949;
+		display: flex;
+		position: fixed;
+		box-shadow:  2px 2px 2px black;
+		top: 0;
+
+	}
+	.super-nav
+	{
+
+		height: 50px;
+		width: 1050px;
+		padding-top: 10px;
+		min-width: 800px;
+		margin: auto;
+		margin-top: 0;
+	}
+	.div1
+	{
+		float: left;
+		margin-left: 0;
+		font-size: 25px;
+	}
+	.div2
+	{
+		float: left;
+		width: 300px;
+		margin-left: 100px;
+		display: flex;
+		justify-content: space-around;
+		font-size: 20px;
+		padding-top: 4px;
+	}
+	.div3
+	{
+		float: right ; 
+		margin-right: 0;
+		padding-top: 4px;
+	}
+	.div3 img
+	{
+		margin-left: 10px;
+		width: 20px;
+		height: 20px;
+		float: right;
+	}
+
+	nav a
+	{
+		text-decoration: none;
+		color: white;
+	}
+	.xt
+	{
+		width: 100%;
+		height: 900px;
+		background-image: linear-gradient(rgba(255,0,0,0), white 40% ,white 40% );
+	}
+	main
+	{
+		width: 1050px;
+		margin: auto;
+		min-width: 800px;
+	}
+
+	.cristo
+	{
+
+		margin-top: 100px;
+		width: 500px;
+		height: 545px;
+		border-right: solid 1px black;
+		float: left;
+		margin-left: 5px;
+	}
+
+	.cristo img
+	{
+		width: 450px;
+		height: 420px;
+		border-radius: 5px;
+		box-shadow: 3px 3px 3px gray;
+		float: left;
+	}
+	.cristop
+	{
+		background-color: pink;
+		margin-bottom: 100px;
+		z-index: 2;
+		float: left;
+		margin-left: -150px;
+		margin-top: 400px;
+		font-size: 22px;
+		border-radius: 5px;
+		box-shadow: 3px 3px 3px gray;
+	}
+	.cristot
+	{
+		float: left;
+		margin-bottom: 50px;
+		margin-left: 20px;
+		font-size: 22px;
+		color: #404040;
+	}
+
+	.torre
+	{
+		margin-top: 100px;
+		width: 500px;
+		height: 220px;
+		margin-left: 40px;
+
+
+	}
+
+	.torre img
+	{
+		width: 225px;
+		height: 220px;
+		border-radius: 5px;
+		box-shadow: 3px 3px 3px gray;
+		z-index: 1;
+		float: left;
+		
+	}
+	.torrep
+	{
+		background-color: pink;
+		margin-bottom: 50px;
+		z-index: 2;
+		float: left;
+		margin-left: -130px;
+		margin-top: 200px;
+		font-size: 22px;
+		border-radius: 5px;
+		box-shadow: 3px 3px 3px gray;
+	}
+	.geral
+	{
+		margin-top: 0px;
+		width: 700px;
+		height: 220px;
+		margin-left: 5px;
+		float: left;
+	}
+	.geral img
+	{
+		width: 160px;
+		height: 150px;
+		border-radius: 3px;
+		box-shadow: 3px 3px 3px gray;
+		z-index: 1;
+		float: left;
+	}
+	.geralt
+	{
+		padding-left:  20px;
+		margin-left: 160px;
+		font-size: 22px;
+		color: #404040;
+		text-shadow: 1px 1px 2px white;
+	}
+	.torret
+	{
+		padding-left:  20px;
+		margin-left: 220px;
+		font-size: 22px;
+		color: #404040;
+
+	}
+
+	.later
+	{
+			float: left;
+	}
+
+	.testr
+	{
+		width: 200px;
+		height: 500px;
+		border: solid 1px black;
+	    background-color: white; 
+	    float: right;
+	    background-image: url(jaba.jpg);
+	}
+	.testr2
+	{
+		width: 200px;
+		height: 500px;
+		border: solid 1px black;
+		position: fixed;
+	    top: 100px;
+	    left: 998px;
+	    bottom: 10px;
+	    background-color: white; 
+	    background-image: url(jaba.jpg);
+	}
+	.uper
+	{
+		display: none;
+	}
+	.uper2
+	{
+		display: block;
+	}
+	.lt1
+	{
+		display: none;
+	}
+	.lt2
+	{
+		display: none;
+	}
+	.nots
+	{
+		display: none;
+	}
+	.upx
+	{
+		
+	}
+
+	</style>
+</head>
+<body>
+<div class="xt">
+
+	<header>
+		<nav>
+			<div class="super-nav" >
+				<div class="div1">
+					<a href="">Monumentos</a>
+				</div>
+				<div class="div2">
+					<a href="">Home</a>
+					<a href="">Destaques</a>
+					<a href="">Recorentes</a>
+				</div>
+				<div class="div3">
+					<input id="buss" type="text" name="">
+					<img onclick="busca()" src="lupa.png">
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+	<main>
+		<div class="cristo">
+			<img class="uper" src="cristo.jpg">
+			<img class="uper" src="torre.jpg">
+			<img class="uper" src="coli2.jpg">
+			<p class="cristop" >Cristo Redentor</p>
+			<div class="cristot">
+				<p>Uma estátua art déco que retrata Jesus Cristo, localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar.</p>
+			</div>
+		</div>
+
+		<div class="later">
+
+			<div class="torre">
+				<img class="lt1" src="coli2.jpg">
+				<img class="lt1" src="cristo.jpg">
+				<img class="lt1" src="torre.jpg">
+				
+				<p class="torrep">Torre eifel</p>
+				<div class="torret">
+				<p>Uma torre treliça de ferro do século XIX localizada no Champ de Mars, em Paris.</p>
+			    </div>
+
+			</div>
+			<div class="torre">
+				<img class="lt2" src="torre.jpg">
+				<img class="lt2" src="coli2.jpg">
+				<img class="lt2" src="cristo.jpg">
+				<p class="torrep" >Coliseu</p>
+				<div class="torret">
+				<p> Um anfiteatro oval localizado no centro da cidade de Roma, capital da Itália. Construído com concreto e areia.</p>
+			    </div>
+			</div>
+		</div>	
+
+		<div class="testr" >
+			
+		</div>
+		<div class="upx">
+
+			<div class="nots">
+				<div class="geral">
+					<img src="cristo.jpg">
+					<div class="geralt">
+					<p>Cristo Redentor:</p>
+					<p>Uma estátua art déco que retrata Jesus Cristo, localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar.</p>
+			    	</div>
+				</div>
+				<div class="geral">
+					<img src="torre.jpg">
+					<div class="geralt">
+					<p>Torre eifel:</p>
+					<p>Uma torre treliça de ferro do século XIX localizada no Champ de Mars, em Paris. </p>
+			    	</div>
+				</div>
+				<div class="geral">
+					<img src="coli2.jpg">
+					<div class="geralt">
+					<p>Coliseu:</p>
+					<p>Um anfiteatro oval localizado no centro da cidade de Roma, capital da Itália. Construído com concreto e areia. </p>
+			    	</div>
+				</div>	
+			</div>
+			
+			<div class="geral">
+				<img src="banespa.jpg">
+				<div class="geralt">
+				<p>Banespa:</p>
+				<p>Um dos prédios mais emblemáticos da capital paulista, sendo o terceiro arranha-céu mais alto da cidade. </p>
+			    </div>
+			</div>
+			<div class="geral">
+				<img src="taj.jpg">
+				<div class="geralt">
+				<p>Taj Mahal:</p>
+				<p>Um mausoléu situado em Agra, na Índia, sendo o mais conhecido dos monumentos do país. É classificado pela UNESCO como Patrimônio da Humanidade. </p>
+			    </div>
+			</div>
+			<div class="geral">
+				<img src="libert.jpg">
+				<div class="geralt">
+				<p>Estatua da Liberdade:</p>
+				<p>O nome oficial é A Liberdade Iluminando o Mundoé, é  uma escultura neoclássica colossal localizada na ilha da Liberdade no porto de Nova Iorque, nos Estados Unidos. </p>
+			    </div>
+			</div>
+			<div class="geral">
+				<img src="muro.jpg">
+				<div class="geralt">
+				<p>Muralha da China:</p>
+				<p> Uma série de fortificações feitas de pedra, tijolo, terra compactada, madeira e outros materiais, geralmente construída ao longo de uma linha leste-oeste. </p>
+			    </div>
+			</div>
+			<div class="geral">
+				<img src="pir.jpg">
+				<div class="geralt">
+				<p>Pirâmides egípcias:</p>
+				<p>São antigas estruturas feitas em alvenaria construídas pela civilização do Antigo Egito. Até novembro de 2008, existiam fontes citando entre 118 e 138 pirâmides.</p>
+			    </div>
+			</div>
+		</div>		
+	</main>
+
+	<footer>
+		
+	</footer>
+
+
+
+</div>
+</body>
+</html>
